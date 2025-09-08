@@ -1,5 +1,6 @@
 {
-  "name": "bun-react-template",
+  "homepage": "https://tigertony2536.github.io/tigertony2536",
+  "name": "tigertony2536",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -8,7 +9,8 @@
   "scripts": {
     "dev": "bun --hot src/index.tsx",
     "start": "NODE_ENV=production bun src/index.tsx",
-    "build": "bun run build.ts"
+    "build": "bun run build.ts",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.0",
@@ -28,8 +30,9 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/bun": "latest"
+    "gh-pages": "^6.3.0"
   }
 }
