@@ -1,5 +1,5 @@
 {
-  "homepage": "https://tigertony2536.github.io/tigertony2536",
+  "homepage": "https://tigertony2536.github.io/",
   "name": "tigertony2536",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +10,7 @@
     "dev": "bun --hot src/index.tsx",
     "start": "NODE_ENV=production bun src/index.tsx",
     "build": "bun run build.ts --outdir=docs",
-    "deploy": "bun run build && gh-pages -d dist"
+    "deploy": "bun run build && gh-pages -d docs"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.0",
