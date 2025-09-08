@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "bun --hot src/index.tsx",
     "start": "NODE_ENV=production bun src/index.tsx",
-    "build": "bun run build.ts",
-    "deploy": "gh-pages -d build"
+    "build": "bun run build.ts --outdir=docs",
+    "deploy": "bun run build && gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.0",
